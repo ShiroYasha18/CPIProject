@@ -10,7 +10,7 @@ def get_mood_from_text(paragraph):
     prompt = f"Analyze the following paragraph and determine the mood (Happy, Sad, Energetic, Calm):\n\n{paragraph}\n\nMood:"
 
     response = openai.Completion.create(
-        engine="text-davinci-003",  # Or "gpt-4" if using GPT-4
+        engine="gpt-4",
         prompt=prompt,
         max_tokens=10,
         n=1,
