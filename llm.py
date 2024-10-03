@@ -1,9 +1,9 @@
-# Example using OpenAI API (if using GPT-3/4)
+
 import os
 
 import openai
 
-# Set your OpenAI API key
+
 openai.api_key = os.environ('OPENAI_API_KEY')
 
 def get_mood_from_text(paragraph):
@@ -21,7 +21,7 @@ def get_mood_from_text(paragraph):
     mood = response['choices'][0]['text'].strip()
     return mood
 
-# Example paragraph
+
 paragraph = "I feel so excited today! Everything just seems to be going perfectly."
 mood = get_mood_from_text(paragraph)
 print(f"Identified mood: {mood}")
